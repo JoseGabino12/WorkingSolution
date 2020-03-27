@@ -1,12 +1,14 @@
 .login{
-    padding: 10%;
+    padding: 15%;
     padding-top: 0%;
     margin: auto;
+    margin-bottom: 10%;
+    height: 50%;
 }
 
 .img-log{
     padding-left: 40%;
-    padding-top: 5%;
+    padding-top: 0%;
     margin: auto;
     height: 400px;
 }
@@ -16,6 +18,14 @@
     color: #DFAF61;
 }
 
+.divisor-log{
+    text-decoration: none;
+    color: #DFAF61;
+    border-color: #DFAF61;
+
+}
+
 a:hover{
     color: #DFAF61;
+
 }
