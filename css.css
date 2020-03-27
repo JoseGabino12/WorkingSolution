@@ -1,0 +1,21 @@
+.login{
+    padding: 10%;
+    padding-top: 0%;
+    margin: auto;
+}
+
+.img-log{
+    padding-left: 40%;
+    padding-top: 5%;
+    margin: auto;
+    height: 400px;
+}
+
+.background-login{
+    background-color: #263548;
+    color: #DFAF61;
+}
+
+a:hover{
+    color: #DFAF61;
+}
