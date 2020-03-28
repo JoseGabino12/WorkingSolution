@@ -2,43 +2,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Registrate</title>
 </head>
-<body>
+<body class="background-registro">
     
-    
+    <div class="img-registro">
+    <img src="./Imagenes/logo.PNG" >
+        <center>
+            <h1 class="registro-titulo">¡REGISTRATE!</h1>
+        </center> 
+    </div>
 
-    <h1>Registrate!</h1>
 
-    <p>Nombre de la empresa: 
-        <input type="text" name="Nombre" placeholder="Ejemplo: Unitips">
-    </p>
 
-    <p>Direccion: 
-        <input type="text" name="Direccion" size="40" placeholder="Ejemplo: elias Arias #18">
-    </p>
-
-    <p>Giro: 
-        <input type="text" name="Giro" size="40" placeholder="Ejemplo: Comercial">
-    </p>
-
-    <p>RFC: 
-        <input type="text" name="RFC" size="40" placeholder="Ejemplo: CUPU800825569">
-    </p>
-
-    <p>Nacionalidad: 
-        <input type="text" name="Nacionalidad" size="40" placeholder="Ejemplo: Mexicano">
-    </p>
-
-    <p>Tipo: 
-        <input type="text" name="Tipo" size="40" placeholder="Ejemplo: Sociedad Anonima">
-    </p>
-
-    <p>
-        <input type="radio" name="hm" value="h" required> Acepto Terminos y condiciones WorkingSolution
-    </p>
-
-    <input type="button" value="Registrarme">
+    <form class="registro-empresa">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Nombre de la empresa</label>
+            <input type="text" class="form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Giro</label>
+            <input type="text" class="form-control" id="inputPassword4" placeholder="Comercial">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Direccion</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Elias Arias #18">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">RFC</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="CUPU800825569">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Nacionalidad</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">Tipo</label>
+            <select id="inputState" class="form-control">
+              <option selected>Sociedad en comandita simple</option>
+              <option>Sociedad en comandita por acciones</option>
+              <option>Sociedades de responsabilidad limitada</option>
+              <option>Sociedad Anónima</option>
+              <option>Sociedad Cooperativa</option>
+              <option>Sociedad en nombre colectivo</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                Acepto Terminos y condiciones WorkingSolution
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Registrarme</button>
+      </form>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>

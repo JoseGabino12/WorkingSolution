@@ -2,35 +2,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Registrate</title>
 </head>
-<body>
+
+<body class="background-registro">
     
-    <h1>Registrate!</h1>
+    <div class="img-registro">
+    <img src="./Imagenes/logo.PNG" >
+        <center>
+            <h1 class="registro-titulo">¡REGISTRATE!</h1>
+        </center> 
+    </div>
 
-    <p>Apellido Paterno: <input type="text" name="nombre" placeholder="Ejemplo: Alvarez"></p>
 
-    <p>Apellido Materno: <input type="text" name="apellidos" size="40" placeholder="Ejemplo: Figueroa"></p>
 
-    <p>Nombre: <input type="text" name="apellidos" size="40" placeholder="Ejemplo: Juan Raul"></p>
+    <form class="registro-empresa">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+            <label for="inputEmail4">Apellido Paterno</label>
+            <input type="text" class="form-control" id="inputEmail4">
+            </div>
+            <div class="form-group col-md-6">
+            <label for="inputPassword4">Apellido Materno</label>
+            <input type="text" class="form-control" id="inputPassword4" placeholder="Comercial">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Nombre</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Elias Arias #18">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress2">Especialidad</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="CUPU800825569">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+            <label for="inputCity">Nacionalidad</label>
+            <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+            <label for="inputState">Fecha de Nacimiento</label>
+            <input type="date" name="" id="" class="form-control">
+            </div>
+        </div>
+        
+        <div class="registro-sexo">
+            <label for="inputZip">Sexo </label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Hombre</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Mujer</label>
+              </div>
+        </div><br>
 
-    Fecha: <input type="date" name="fecha">
-
-    <p>Especialidad: <input type="text" name="Especialidad" size="40" placeholder="Ejemplo: Mecanico"></p>
-
-    <p>Nacionalidad: <input type="text" name="Nacionalidad" size="40" placeholder="Ejemplo: Mexicano"></p>
-
-    <p>Sexo:
-        <input type="radio" name="hm" value="h" required> Hombre
-        <input type="radio" name="hm" value="m" required> Mujer
-    </p>
-
-    <p>
-        <input type="radio" name="hm" value="h" required> Acepto Terminos y condiciones WorkingSolution
-    </p>
-
-    <input type="button" value="Registrarme">
+        <div class="form-group">
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                Acepto Terminos y condiciones WorkingSolution
+            </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Registrarme</button>
+    </form>
 
 
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>
